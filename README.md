@@ -32,7 +32,7 @@ Navigate to the repository folder in your terminal and compile the Java source f
 ```bash
 javac SecureStreamServer.java SecureUDPproxy.java
 ```
-### 2.Execution
+### 2. Execution
 
 1. **Navigate vlc and initialize Network stream in udp://@:7777**
 2. **run SecureUDPproxy** 
