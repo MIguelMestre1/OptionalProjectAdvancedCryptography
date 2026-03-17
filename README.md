@@ -39,7 +39,7 @@ javac SecureStreamServer.java SecureUDPproxy.java
 ```bash
 java SecureUDPproxy.java <encryptionMethod>
 ```
-3. **run SecureStreamServer**
+3.  **run SecureStreamServer**
 ```bash
 :java SecureStreamServer.java movies/<movie>.dat <remote_ip> <remote_port> <encryptionMethod>
 ```
