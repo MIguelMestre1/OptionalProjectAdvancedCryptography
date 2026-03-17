@@ -1,6 +1,5 @@
 # Optional Project: Advanced Cryptography - Secure UDP Video Stream
 
-**Note for Evaluation:** This repository has been shared with the GitHub user `henriquejoaolopesdomingos` as per the project requirements.
 
 ## 📖 Project Description
 
@@ -16,7 +15,7 @@ The project implements three cryptographic approaches to secure the stream:
 
 ---
 
-## ⚙️ Prerequisites and Dependencies
+## Prerequisites and Dependencies
 
 To build and run this project, you will need:
 * **Java Development Kit (JDK):** Version 8 or higher.
@@ -25,9 +24,27 @@ To build and run this project, you will need:
 
 ---
 
-## 🛠️ Build & Configuration Instructions
+## Build & Configuration Instructions
+
 
 ### 1. Compilation
 Navigate to the repository folder in your terminal and compile the Java source files:
 ```bash
 javac SecureStreamServer.java SecureUDPproxy.java
+```
+### 2.Execution
+
+1. **Navigate vlc and initialize Network stream in udp://@:7777**
+2. **run SecureUDPproxy** 
+```bash
+java SecureUDPproxy.java <encryptionMethod>
+```
+3. **run SecureStreamServer**
+```bash
+:java SecureStreamServer.java movies/<movie>.dat <remote_ip> <remote_port> <encryptionMethod>
+```
+
+
+
+
+
